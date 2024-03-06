@@ -30,6 +30,7 @@ function App() {
   return (
     <>
       <h2>Country App</h2>
+      {error && <h2>{error.message}</h2>}
       {countries && 
         <Countries countryData={filteredCountries}/>
       }
